@@ -48,7 +48,6 @@ dbt-core==1.8.1
     #   dbt-duckdb
 dbt-duckdb==1.8.1
     # via -r requirements.in
-dbt-extractor==0.5.1
     # via dbt-core
 dbt-semantic-interfaces==0.5.1
     # via dbt-core
@@ -129,10 +128,6 @@ protobuf==4.25.3
     # via dbt-core
 pycparser==2.21
     # via cffi
-pydantic==2.6.3
-    # via dbt-semantic-interfaces
-pydantic-core==2.16.3
-    # via pydantic
 pygments==2.17.2
     # via
     #   cli-helpers
