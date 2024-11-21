@@ -16,7 +16,10 @@ renamed as (
         payment_method,
 
         -- `amount` is currently stored in cents, so we convert it to dollars
-        amount / 100 as amount
+        case 
+            when payment_method = 'bank_transfer' then amount
+            else amount / 100 
+        end as amount
 
     from source
 
